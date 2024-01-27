@@ -1,4 +1,4 @@
-import Banner from '../components/banner'
+import Banner from '../components/Banner'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'

@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
     <div className={`rounded-3xl p-[2px] ${gradient} mt-10`}>
         <div className={`xl:flex shadow ${reverse} xl:h-[450px] p-6 bg-zinc-50 rounded-[calc(25px-3px)] gap-5`}>
             <div className={`w-[100%] xl:w-[40rem] h-[400px] rounded-3xl overflow-hidden ease duration-[3s] 
-                ${image} bg-cover bg-top hover:bg-bottom cursor-pointer shadow-md`}>
+                ${image} bg-cover bg-top hover:bg-bottom cursor-pointer shadow-sm`}>
             </div>
             <div className='xl:w-[35rem] text-center flex flex-col justify-center items-center xl:mt-0 mt-10'>
                 <h1 className='text-3xl font-bold text-zinc-600'>{title}</h1>
