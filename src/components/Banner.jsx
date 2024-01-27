@@ -8,7 +8,6 @@ const Banner = () => {
                 <div className=''>
                     <div className='flex items-center gap-2'>
                         <h3 className='text-3xl font-bold text-zinc-600'>Pramudya Diagusta.</h3>
-                        {/* <img src="images/hand.png" alt="" className='w-12'/> */}
                     </div>
                     <h2 className='text-5xl font-bold text-zinc-700 mt-5 leading-tight'>a passionate web developer who crafting dynamic and interactive web applications</h2>
                     <div className="text-zinc-800 text-3xl flex gap-3 mt-10">
