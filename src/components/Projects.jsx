@@ -11,7 +11,7 @@ const Projects = () => {
                 <ProjectCard 
                     title="Dinoco🦕"
                     description="Dinoco is a website that provide various type of car that stored into MySql Database, the backend is built with Node Js using Express Framework, React and Tailwind for the frontend development"
-                    image="bg-[url(images/dinoco.png)]"
+                    image="images/dinoco.png"
                     techStack1="images/react.png"
                     techStack2="images/tailwind.png"
                     techStack3="images/node.png"
@@ -23,7 +23,7 @@ const Projects = () => {
                 <ProjectCard 
                     title="Cryptosans🪙"
                     description="Cryptosans is a website that shows real time data of Crypto Currency, consume API from Coin Gecko API's, built using React and Tailwind"
-                    image="bg-[url(images/cryptosans.png)]"
+                    image="images/cryptosans.png"
                     techStack1="images/react.png"
                     techStack2="images/tailwind.png"
                     reverse="flex-row-reverse"
