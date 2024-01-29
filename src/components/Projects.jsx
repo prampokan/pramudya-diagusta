@@ -1,11 +1,22 @@
 import ProjectCard from "../fragments/ProjectCard"
 import MobileProjectCard from "../fragments/MobileProjectCard"
+import { motion } from "framer-motion"
 
 const Projects = () => {
   return (
     <section className='w-full bg-white flex justify-center items-center py-20 px-5 xl:px-0' id="projects">
         <div className='w-[75rem]'>
-            <h1 className='text-3xl xl:text-5xl font-bold text-zinc-600 mb-5'>🚀Highlighted Projects</h1>
+            <h1 className='text-3xl xl:text-5xl font-bold text-zinc-600 mb-5 flex'>
+                <motion.div
+                    initial={{ translateY: 50, translateX: -50, opacity: 0}}
+                    whileInView={{ translateY: 0, translateX: 0, opacity: 1}}
+                    transition={{duration: 0.7}}
+                    viewport={{once: true}}
+                >
+                    🚀
+                </motion.div>
+                Highlighted Projects
+            </h1>
             <p className='xl:w-[40rem] leading-loose text-zinc-500'>I work on various projects, such as front-end websites and full-stack sites with databases, Javascript is a perfect language for those projects, but I also work on mobile apps using react native!</p>
             <div>
                 <ProjectCard 

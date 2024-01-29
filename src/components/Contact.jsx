@@ -1,4 +1,4 @@
-import React from 'react'
+import { motion } from "framer-motion"
 
 const Contact = () => {
 
@@ -17,8 +17,24 @@ const Contact = () => {
   return (
     <div className='flex justify-center items-center pt-32 pb-12 bg-slate-950 px-5 xl:px-0' id='contact'>
         <div className='w-[75rem]'>
-            <h1 className='text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-sky-200 to-white font-bold'>Get in touch with me!<span className='text-white'>👇🏻</span></h1>
-            <div className='sm:flex gap-16 items-center sm:mt-16 mt-10'>
+            <motion.div
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                viewport={{once: true}}
+                transition={{
+                    delay: 0.1
+                }}
+            >
+                <h1 className='text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-sky-200 to-white font-bold'>Get in touch with me!<span className='text-white'>👇🏻</span></h1>
+            </motion.div>
+            <motion.div className='sm:flex gap-16 items-center sm:mt-16 mt-10'
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                viewport={{once: true}}
+                transition={{
+                    delay: 0.3
+                }}
+            >
                 <img src="images/face.jpg" alt="" className='w-32 rounded-full' />
                 <span className='absolute text-5xl translate-x-16 sm:translate-y-10 -translate-y-12'>🔥</span>
                 <div className='flex flex-col gap-8'>
@@ -34,8 +50,17 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                viewport={{once: true}}
+                transition={{
+                    delay: 0.5
+            }}
+            >
             <p className='text-lg text-cyan-700 mt-20'>✨Built with React and Tailwind by Pramudya Diagusta</p> 
+            </motion.div>
         </div>
     </div>
   )

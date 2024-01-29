@@ -5,7 +5,7 @@ import Contact from '../components/Contact'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Navbar/>
         <Banner/>
         <Projects/>

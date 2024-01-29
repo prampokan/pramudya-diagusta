@@ -1,13 +1,21 @@
 import LiveProjectButton from "../elements/LiveProjectButton"
 import GithubProjectButton from "../elements/GithubProjectButton"
 import TechStackCard from "./TechStackCard"
+import { motion } from "framer-motion"
 
 const ProjectCard = (props) => {
   const {image, title, description, techStack1, techStack2, techStack3, techStack4, reverse, gradient, urlDemo, urlGit} = props
   return (
-    <div className={`rounded-3xl p-[2px] ${gradient} mt-10`}>
+    <motion.div className={`rounded-3xl p-[2px] ${gradient} mt-10`}
+        initial={{ opacity: 0, translateX: 500}}
+        whileInView={{ opacity: 1, translateX: 0}}
+        viewport={{once: true}}
+        transition={{
+            delay: 0.2
+        }}
+    >
         <div className={`xl:flex shadow ${reverse} xl:h-[450px] p-6 bg-zinc-50 rounded-[calc(25px-3px)] gap-5`}>
-            <div className={`w-[100%] xl:w-[40rem] h-[400px] rounded-3xl overflow-hidden ease duration-[5s] 
+            <div className={`w-[100%] xl:w-[40rem] h-[400px] rounded-3xl overflow-hidden ease-linear duration-[5s] 
                 bg-cover bg-top hover:bg-bottom cursor-pointer shadow-sm`} style={{ backgroundImage: `url(${image})` }}>
             </div>
             <div className='xl:w-[35rem] text-center flex flex-col justify-center items-center xl:mt-0 mt-10'>
@@ -42,7 +50,7 @@ const ProjectCard = (props) => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

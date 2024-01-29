@@ -1,9 +1,14 @@
 import TechStackCard from '../fragments/TechStackCard'
+import { motion } from "framer-motion"
 
 const Banner = () => {
   return (
     <section className='bg-zinc-100 xl:h-screen py-32 xl:py-0 w-full flex justify-center items-center px-5 xl:px-0 scroll-smooth' id='home'>
-        <div className='w-[75rem]'>
+        <motion.div className='w-[75rem]' 
+            initial={{ opacity: 0, translateY: 100}}
+            whileInView={{ opacity: 1, translateY: 0}}
+            viewport={{once: true}}
+        >
             <div className='xl:flex justify-center items-center'>
                 <div className=''>
                     <div className='flex items-center gap-2'>
@@ -24,47 +29,40 @@ const Banner = () => {
                 <TechStackCard
                     image='images/html.svg'
                     bgColor='bg-red-500'
-                    hover='hover:-rotate-6'
                     width='w-[50px]'
                 />
                 <TechStackCard
                     image='images/css.png'
                     bgColor='bg-blue-700'
-                    hover='hover:-rotate-6'
                     width='w-[50px]'
                 />
                 <TechStackCard
                     image='images/javascript.png'
                     bgColor='bg-yellow-300'
-                    hover='hover:-rotate-6'
                     width='w-[50px]'
                 />
                 <TechStackCard
                     image='images/react.png'
                     bgColor='bg-slate-800'
-                    hover='hover:-rotate-6'
                     width='w-[50px]'
                 />
                 <TechStackCard
                     image='images/node.png'
                     bgColor='bg-green-200'
-                    hover='hover:-rotate-6'
                     width='w-[50px]'
                 />
                 <TechStackCard
                     image='images/express.png'
                     bgColor='bg-white'
-                    hover='hover:-rotate-6'
                     width='w-[50px]'
                 />
                 <TechStackCard
                     image='images/tailwind.png'
                     bgColor='bg-slate-800'
-                    hover='hover:-rotate-6'
                     width='w-[50px]'
                 />
             </div>
-        </div>
+        </motion.div>
     </section>
   )
 }
