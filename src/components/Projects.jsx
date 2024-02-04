@@ -29,6 +29,7 @@ const Projects = () => {
                     techStack4="images/express.png"
                     reverse="flex-row"
                     gradient="bg-gradient-to-br from-red-300 via-zinc-50 to-red-300"
+                    urlDemo="https://dinoco.vercel.app/"
                     urlGit="https://github.com/prampokan/car-website"
                 />
                 <ProjectCard 
