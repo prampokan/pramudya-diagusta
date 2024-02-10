@@ -10,7 +10,7 @@ const MobileProjectCard = () => {
         <div className='bg-zinc-50 w-full sm:h-[40rem] pt-10 rounded-[calc(25px-3px)] text-center flex flex-col items-center sm:overflow-hidden shadow p-10'>
             <h1 className='text-3xl font-bold text-zinc-600'>Spotify Clone🎸</h1>
             <p className='text-zinc-500 mt-5 xl:w-[50rem]'>I also work on mobile apps, this is Spotify Clone provide tons of songs in the world using Shazam API, the UI is made as similar as possible to Spotify and it actually can play songs, built using React Native and Expo Framework</p>
-            <div className="flex flex-wrap justify-center items-center gap-5">
+            <div className="flex flex-wrap justify-center items-center gap-5 mt-5 sm:mt-0">
                 <GithubProjectButton
                     url="https://github.com/prampokan/spotify-clone"
                 />
