@@ -31,7 +31,7 @@ const Banner = () => {
                 </motion.div>
             </div>
             <motion.div className='flex flex-wrap gap-4 2xl:mt-10'
-                initial={{ opacity: 0, translateY: 150}}
+                initial={{ opacity: 0, translateY: 100}}
                 whileInView={{ opacity: 1, translateY: 0}}
                 transition={{duration: 0.5, delay: 0.4}}
                 viewport={{once: true}} 
