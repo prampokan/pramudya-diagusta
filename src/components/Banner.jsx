@@ -38,23 +38,28 @@ const Banner = () => {
             >
                 <p className='text-xl font-medium text-zinc-600 my-5 border-r-2 border-zinc-300 pr-10'>Tech Stack</p>
                 <TechStackCard
-                    image='images/html.svg'
-                    bgColor='bg-red-500'
-                    width='w-[50px]'
-                />
-                <TechStackCard
-                    image='images/css.png'
-                    bgColor='bg-blue-700'
-                    width='w-[50px]'
-                />
-                <TechStackCard
                     image='images/javascript.png'
                     bgColor='bg-yellow-300'
                     width='w-[50px]'
                 />
                 <TechStackCard
+                    image='images/typescript.png'
+                    bgColor='bg-sky-600'
+                    width='w-[50px]'
+                />
+                <TechStackCard
                     image='images/react.png'
                     bgColor='bg-slate-800'
+                    width='w-[50px]'
+                />
+                <TechStackCard
+                    image='images/next.png'
+                    bgColor='bg-white'
+                    width='w-[50px]'
+                />
+                <TechStackCard
+                    image='images/astro.png'
+                    bgColor='bg-slate-900'
                     width='w-[50px]'
                 />
                 <TechStackCard

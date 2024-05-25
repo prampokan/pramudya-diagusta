@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
+import Experience from '../components/Experience'
 
 const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ const LandingPage = () => {
         <Navbar/>
         <Banner/>
         <Projects/>
+        <Experience/>
         <Contact/>
     </div>
   )

@@ -15,8 +15,8 @@ const [open, setOpen] = useState(false)
                 <ul className={`xl:flex gap-8 text-lg font-semibold absolute xl:static bg-white w-full xl:z-auto z-[-1] left-0 xl:w-auto px-5 xl:px-0 pb-5 xl:pb-0 transition-all duration-300 ease-in ${open ? 'top-12 opacity-100' : 'top-[-100px] opacity-0 xl:opacity-100'}`}>
                     <li className="xl:mb-0 mb-5 xl:mt-0 mt-10 ease-linear duration-200 hover:text-blue-500"><a href="#home">Home</a></li>
                     <li className="xl:mb-0 mb-5 ease-linear duration-200 hover:text-blue-500"><a href="#projects">Projects</a></li>
+                    <li className="xl:mb-0 mb-5 ease-linear duration-200 hover:text-blue-500"><a href="#experience">Experience</a></li>
                     <li className="xl:mb-0 mb-5 ease-linear duration-200 hover:text-blue-500"><a href="#contact">Contact</a></li>
-                    <li className="xl:mb-0 mb-5 ease-linear duration-200 hover:text-blue-500"><a href="https://github.com/prampokan"target="_blank" >Github<i className="fa-brands fa-github icon ml-1"></i></a></li>
                 </ul>
             </div>
         </div>
