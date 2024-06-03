@@ -28,10 +28,10 @@ const Navbar = () => {
             </div>
             <div className="flex gap-10 items-center">
                 <ul className={`hidden md:flex gap-8 text-lg font-medium bg-white w-full transition-all duration-300 ease-in`}>
-                    <li className="ease-linear duration-200 hover:text-blue-500"><a href="#home">Home</a></li>
-                    <li className="ease-linear duration-200 hover:text-blue-500"><a href="#projects">Projects</a></li>
-                    <li className="ease-linear duration-200 hover:text-blue-500"><a href="#experience">Experience</a></li>
-                    <li className="ease-linear duration-200 hover:text-blue-500"><a href="#contact">Contact</a></li>
+                    <li className="ease-linear duration-200 hover:text-sky-500"><a href="#home">Home</a></li>
+                    <li className="ease-linear duration-200 hover:text-sky-500"><a href="#projects">Projects</a></li>
+                    <li className="ease-linear duration-200 hover:text-sky-500"><a href="#experience">Experience</a></li>
+                    <li className="ease-linear duration-200 hover:text-sky-500"><a href="#contact">Contact</a></li>
                 </ul>
                 <div className="relative flex flex-col" ref={divRef}>
                     <Bar onclick={() => setOpen(!open)}/>

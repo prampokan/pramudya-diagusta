@@ -6,7 +6,7 @@ const ExperienceCard = (props) => {
     const [open, setOpen] = useState(false); 
     console.log(open);
 
-    const { title, image, projectImg1, projectImg2, projectImg3, tech1, tech2, tech3 } = props
+    const { title, image, description, projectImg1, projectImg2, projectImg3, tech1, tech2, tech3 } = props
 
     return (
     <motion.div
@@ -55,20 +55,26 @@ const ExperienceCard = (props) => {
                 <img src={projectImg3} alt="" className='rounded-xl'/>
             </motion.div>
         </div>
-        <div className="mt-11 pt-8 px-6 bg-white z-10">
+        <div className="mt-11 pt-8 px-6 bg-white z-10 w-full">
             <div className="flex gap-2 mb-2">
-                <div className="text-[10px] font-medium border px-2 py-1 rounded">
-                    {tech1}
-                </div>
-                <div className="text-[10px] font-medium border px-2 py-1 rounded">
-                    {tech2}
-                </div>
-                <div className="text-[10px] font-medium border px-2 py-1 rounded">
-                    {tech3}
-                </div>
+                { tech1 &&
+                    <div className="text-[10px] font-medium border px-2 py-1 rounded">
+                        {tech1}
+                    </div>
+                }
+                { tech2 &&
+                    <div className="text-[10px] font-medium border px-2 py-1 rounded">
+                        {tech2}
+                    </div>
+                }
+                { tech3 &&
+                    <div className="text-[10px] font-medium border px-2 py-1 rounded">
+                        {tech3}
+                    </div>
+                }
             </div>
             <p className="text-slate-500 leading-loose text-sm">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae debitis mollitia corrupti. Placeat consequatur necessitatibus, sunt consequuntur, est maiores possimus, quos rem voluptate culpa neque itaque accusamus mollitia in harum.
+                {description}
             </p>
         </div>
     </motion.div>
