@@ -34,6 +34,21 @@ const Projects = () => {
             <p className='xl:w-[40rem] text-lg leading-loose text-slate-500'>I work on various projects, such as front-end websites and full-stack sites with databases, Javascript is a perfect language for those projects, but I also work on mobile apps using react native!</p>
             <div>
                 <ProjectCard 
+                    title="Website KKN"
+                    description="This website is part of a work program I'm involved in during my KKN (Community Service) at Diponegoro University (Undip), where I have been assigned to Turus village. The website is built using Next.js, Tailwind CSS, and Firebase."
+                    image="images/website-kkn.png"
+                    techStack1="images/react.png"
+                    techStack2="images/tailwind.png"
+                    techStack3="images/node.png"
+                    techStack4="images/express.png"
+                    reverse="flex-row"
+                    gradient="bg-gradient-to-br from-red-300 via-zinc-50 to-red-300"
+                    urlDemo="https://www.desaturus.com/"
+                    urlGit="https://github.com/prampokan/website-kkn"
+                    duration="duration-[8s]"
+                    text="Live Demo"
+                />
+                <ProjectCard 
                     title="Dinoco🦕"
                     description="Dinoco is a website that provide various type of car that stored into MySql Database, the backend is built with Node Js using Express Framework, React and Tailwind for the frontend development"
                     image="images/dinoco-compressed.png"
@@ -41,12 +56,14 @@ const Projects = () => {
                     techStack2="images/tailwind.png"
                     techStack3="images/node.png"
                     techStack4="images/express.png"
-                    reverse="flex-row"
-                    gradient="bg-gradient-to-br from-red-300 via-zinc-50 to-red-300"
+                    reverse="flex-row-reverse"
+                    gradient="bg-gradient-to-br from-sky-300 via-zinc-50 to-sky-300"
                     urlDemo="https://dinoco.vercel.app/"
                     urlGit="https://github.com/prampokan/car-website"
+                    duration="duration-[5s]"
+                    text="Live Demo"
                 />
-                <ProjectCard 
+                {/* <ProjectCard 
                     title="Cryptosans🪙"
                     description="Cryptosans is a website that shows real time data of Crypto Currency, consume API from Coin Gecko API's, built using React and Tailwind"
                     image="images/cryptosans-compressed.png"
@@ -56,7 +73,7 @@ const Projects = () => {
                     gradient="bg-gradient-to-br from-sky-300 via-zinc-50 to-sky-300"
                     urlDemo="https://cryptosans.vercel.app/"
                     urlGit="https://github.com/prampokan/cryptosans"
-                />
+                /> */}
                 <MobileProjectCard/>
             </div>
         </div>

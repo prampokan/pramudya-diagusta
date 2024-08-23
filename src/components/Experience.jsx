@@ -61,10 +61,8 @@ const Experience = () => {
                         tech1="cloud computing"
                         tech2="GCP"
                         description="I’m joining Bangkit Academy by Kampus Merdeka MSIB Batch 6. Here
-                        I learn anything about cloud computing using Google Cloud Platform
-                        and back-end developing. And we were assigned to work on a
-                        capstone project in collaboration with Machine Learning learning
-                        path and Mobile Development learning path."
+                        I learn anything about cloud computing using Google Cloud Platform. And we were assigned to work on a
+                        capstone project in collaboration with Machine Learning and Mobile Development."
                     />
                 </motion.div>
                 <motion.div className="w-full xl:w-[24rem]"

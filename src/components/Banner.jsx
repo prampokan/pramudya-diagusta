@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const Banner = () => {
   return (
-    <section className='bg-zinc-100 xl:h-screen py-32 xl:py-0 w-full flex justify-center items-center px-5 xl:px-0 scroll-smooth' id='home'>
+    <section className='bg-slate-50 xl:h-screen py-32 xl:py-0 w-full flex justify-center items-center px-5 xl:px-0 scroll-smooth' id='home'>
         <div className='w-[75rem]'>
             <div className='xl:flex justify-center items-center'>
                 <motion.div className=''

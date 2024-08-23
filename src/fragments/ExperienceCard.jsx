@@ -73,7 +73,7 @@ const ExperienceCard = (props) => {
                     </div>
                 }
             </div>
-            <p className="text-slate-500 leading-loose text-sm">
+            <p className="text-slate-500 leading-loose text-sm mt-3">
                 {description}
             </p>
         </div>
