@@ -19,12 +19,6 @@ const MobileProjectCard = () => {
                 <GithubProjectButton
                     url="https://github.com/prampokan/spotify-clone"
                 />
-                <p className='text-lg font-medium text-slate-600 border-r-2 border-slate-300 pr-10'>Tech Stack</p>
-                <TechStackCard
-                    image='images/react.png'
-                    width='w-[40px]'
-                    height='h-[40px]'
-                />
             </div>
             <div className='flex'>
                 <motion.div className='w-44 lg:w-60 ease-in-out cursor-pointer hidden sm:block'
@@ -84,12 +78,6 @@ return (
                 />
                 <GithubProjectButton
                     url="https://github.com/prampokan/spotify-clone"
-                />
-                <p className='text-lg font-medium text-slate-600 border-r-2 border-slate-300 pr-10'>Tech Stack</p>
-                <TechStackCard
-                    image='images/react.png'
-                    width='w-[40px]'
-                    height='h-[40px]'
                 />
             </div>
             <div className='flex'>

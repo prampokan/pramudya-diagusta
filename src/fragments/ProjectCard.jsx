@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
             <div className='xl:w-[35rem] text-center flex flex-col justify-center items-center xl:mt-0 mt-10'>
                 <h1 className='text-3xl font-bold text-slate-600'>{title}</h1>
                 <p className='text-slate-500 mt-5 xl:w-[30rem]'>{description}</p>
-                <div className="flex justify-center items-center gap-6 mt-10">
+                <div className="flex justify-center items-center gap-6 mt-5">
                     <LiveProjectButton
                         url={urlDemo}
                         text={text}
@@ -26,7 +26,7 @@ const ProjectCard = (props) => {
                         url={urlGit}
                     />
                 </div>
-                <div className="flex flex-wrap justify-center items-center mt-10 gap-5">
+                <div className="flex flex-wrap justify-center items-center mt-5 gap-5">
                     <p className='text-lg font-medium text-slate-600 my-5 border-r-2 border-slate-300 pr-10'>Tech Stack</p>
                     <TechStackCard
                         image={techStack1}
@@ -66,7 +66,7 @@ const ProjectCard = (props) => {
             <div className='xl:w-[35rem] text-center flex flex-col justify-center items-center xl:mt-0 mt-10'>
                 <h1 className='text-3xl font-bold text-slate-600'>{title}</h1>
                 <p className='text-slate-500 leading-loose mt-5 xl:w-[27rem]'>{description}</p>
-                <div className="flex justify-center items-center gap-3 mt-10">
+                <div className="flex justify-center items-center gap-3 mt-5">
                     <LiveProjectButton
                         url={urlDemo}
                         text={text}
@@ -75,7 +75,7 @@ const ProjectCard = (props) => {
                         url={urlGit}
                     />
                 </div>
-                <div className="flex flex-wrap justify-center items-center mt-10 gap-5">
+                <div className="flex flex-wrap justify-center items-center mt-5 gap-5">
                     <p className='text-lg font-medium text-slate-600 my-5 border-r-2 border-slate-300 pr-10'>Tech Stack</p>
                     {techStack1 && 
                         <TechStackCard
